@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atividade – Layout Responsivo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ 
+  <header class="site-header">
+    <nav class="cabecalho" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#mitologia">Mitologia</a>
+      <a href="https://norse-mythology.org/gods-and-creatures/the-aesir-gods-and-goddesses/thor/" target="_blank" rel="noopener">Saiba Mais</a>
+    </nav>
+  </header>
+
+  <main class="wrapper" aria-labelledby="titulo-principal">
+    <header class="headline">
+      <h1 id="titulo-principal">ThOr</h1>
+      <p>Um pouco Sobre THOR em... Layout Responsivo por Matheus Bahry e Alvaro Oliveira</p>
+    </header>
+
+   
+    <section id="sobre" class="grid" aria-label="Sessões de conteúdo">
+
+      
+      <div class="card">
+        <figure>
+          <img class="media" src="thormito.jpg" alt="Thor mitológico">
+        </figure>
+      </div>
+
+     
+      <div class="card" role="region" aria-labelledby="card2-title">
+        <div class="card-body">
+          <span class="badge" aria-hidden="true">Quem ele é?</span>
+          <h2 id="card2-title">Thor</h2>
+          <p>
+            Thor é primariamente conhecido como o <em>Deus do Trovão</em>, na mitologia nórdica,
+            <strong>o mais popular entre os deuses</strong>, filho de Odin e um dos protetores
+            de Asgard e da humanidade. <strong>Ele é associado à força, proteção, agricultura
+            e controle do clima.</strong> Sua principal arma é o martelo encantado Mjölnir,
+            que lhe concede poderes.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img class="media" src="thorcomics.jpg" alt="Thor nas HQs">
+        </figure>
+      </div>
+
+    </section>
+
+    <section id="mitologia" class="feature" aria-label="Mais sobre Thor">
+      <div class="card card-flex" role="region" aria-labelledby="feature-title">
+        <picture class="feature__media">
+         
+          <img class="media" src="thortrovao.jpg" alt="Thor empunhando Mjölnir sob trovões" />
+        </picture>
+
+        <div class="card-body feature__content">
+          <span class="badge" aria-hidden="true">Mjölnir</span>
+          <h2 id="feature-title">Força, Proteção e Trovões</h2>
+          <p>
+            O martelo Mjölnir é o símbolo máximo do poder de Thor. Mais do que uma arma,
+            representa a proteção dos deuses e dos humanos contra as forças do caos.
+          </p>
+          <p>
+            Em telas grandes, imagem e texto ficam lado a lado; em telas pequenas (375&nbsp;px),
+            o layout empilha para manter a leitura confortável.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ 
+  <footer class="rodape">
+    <p>© 2025 — Matheus Bahry / Alvaro Oliveira</p>
+    <a href="https://exemplo.com" target="_blank" rel="noopener">Saiba Mais</a>
+
+    <button id="btn-contraste" aria-label="Ativar alto contraste">Alto Contraste</button>
+  </footer>
+
+  <script>
+    const btn = document.getElementById("btn-contraste");
+    btn.addEventListener("click", () => {
+      document.body.classList.toggle("alto-contraste");
+    });
+  </script>
+</body>
+</html>
+
+
